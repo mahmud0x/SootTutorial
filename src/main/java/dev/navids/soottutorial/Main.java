@@ -8,6 +8,9 @@ import dev.navids.soottutorial.basicapi.BasicAPI;
 import dev.navids.soottutorial.hellosoot.HelloSoot;
 import dev.navids.soottutorial.intraanalysis.npanalysis.NPAMain;
 import dev.navids.soottutorial.intraanalysis.usagefinder.UsageFinder;
+//Modified
+import dev.navids.soottutorial.android.VikingNetCall;
+import dev.navids.soottutorial.android.VikingCallGraph;
 
 import java.util.Arrays;
 
@@ -38,6 +41,10 @@ public class Main {
             UsageFinder.main(restOfTheArgs);
         else if(args[0].equals("NullPointerAnalysis"))
             NPAMain.main(restOfTheArgs);
+        else if(args[0].equals("VikingNetCall")) // Add this line
+            VikingNetCall.main(restOfTheArgs); // Call the main method of VikingNetCall
+        else if(args[0].equals("VikingCallGraph")) // Add this line
+            VikingCallGraph.main(restOfTheArgs); // Call the main method of VikingNetCall
         else
             System.err.println("The class '" + args[0] + "' does not exists or does not have a main method.");
     }

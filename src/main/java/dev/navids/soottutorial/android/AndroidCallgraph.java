@@ -58,6 +58,11 @@ public class AndroidCallgraph {
             }
         }
         System.out.println("-----------");
+        
+        // Retrieve and print all classes and method signatures
+        System.out.println("Printing all class and method signatures in the APK:");
+        printClassAndMethodSignatures();
+
         // Retrieve some methods to demonstrate reachability in callgraph
         SootMethod childMethod = Scene.v().getMethod(childMethodSignature);
         SootMethod parentMethod = Scene.v().getMethod(parentMethodSignature);
@@ -86,7 +91,6 @@ public class AndroidCallgraph {
             System.out.println("parentMethod is reachable from MainActivity, a possible path: " + getPossiblePath(reachableParentMapFromMainActivity, parentMethod));
         else
             System.out.println("parentMethod is not reachable from MainActivity.");
-
 
         // Draw a subset of call graph
         if (drawGraph) {
@@ -131,4 +135,13 @@ public class AndroidCallgraph {
         } return possiblePath;
     }
 
+    // This method prints out all class and method signatures
+    public static void printClassAndMethodSignatures() {
+        for (SootClass sootClass : Scene.v().getClasses()) {
+            System.out.println("Class: " + sootClass.getName());
+            for (SootMethod sootMethod : sootClass.getMethods()) {
+                System.out.println("Method: " + sootMethod.getSignature());
+            }
+        }
+    }
 }

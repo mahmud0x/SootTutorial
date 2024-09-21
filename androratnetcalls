@@ -1,0 +1,23 @@
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :run
+Detected Network/API Calls:
+<android.net.ConnectivityManager: android.net.NetworkInfo getNetworkInfo(int)>
+<java.net.Socket: void close()>
+<android.net.Uri: android.net.Uri parse(java.lang.String)>
+<android.net.NetworkInfo: int getSubtype()>
+<android.net.ConnectivityManager: android.net.NetworkInfo getActiveNetworkInfo()>
+<android.net.NetworkInfo: boolean isAvailable()>
+<android.net.NetworkInfo: int getType()>
+<android.net.NetworkInfo: java.lang.String getReason()>
+<java.net.Socket: java.io.OutputStream getOutputStream()>
+<android.net.NetworkInfo: java.lang.String getExtraInfo()>
+<java.net.Socket: java.io.InputStream getInputStream()>
+<android.net.NetworkInfo: boolean isConnectedOrConnecting()>
+<java.net.Socket: void <init>(java.lang.String,int)>
+<java.net.ServerSocket: java.net.Socket accept()>
+
+BUILD SUCCESSFUL in 6s
+2 actionable tasks: 2 executed

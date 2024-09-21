@@ -1,0 +1,152 @@
+flowdroid@fe453bf40ea4:~$ flowdroid /opt/flowdroid/viking.apk /opt/android-sdk-linux/platforms/android-7.0/android.jar
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/flowdroid/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/flowdroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 89 classes and 12 exclusions.
+Running data flow analysis...
+Found dex file 'classes.dex' with 7318 classes in '/opt/flowdroid/viking.apk'
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.053038159 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.2 seconds.
+[Spark] Type masks in 0.1 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 14.8 seconds.
+[Spark] Solution found in 14.8 seconds.
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+Callback analysis done.
+Found 1 layout controls in file res/layout-v21/place_autocomplete_fragment.xml
+Found 2 layout controls in file res/layout/place_autocomplete_fragment.xml
+Found 3 layout controls in file res/layout/place_autocomplete_item_powered_by_google.xml
+Found 4 layout controls in file res/layout/place_autocomplete_item_prediction.xml
+Found 5 layout controls in file res/layout/place_autocomplete_progress.xml
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.chartboost.sdk.impl.ax
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.chartboost.sdk.impl.bg$b
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.chartboost.sdk.Model.a$a
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.chartboost.sdk.Model.a$b
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.chartboost.sdk.impl.bg$a, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 8.9 seconds.
+[Spark] Solution found in 8.9 seconds.
+Running incremental callback analysis for 10 components...
+Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Entry point calculation done.
+Created a SourceSinkManager with 46 sources, 122 sinks, and 27 callback methods.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /opt/flowdroid/viking.apk with 46 sources and 122 sinks...
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using alias algorithm FlowSensitive
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 0.002340217 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 0.414762149 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 9106 edges
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.android.data.AndroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.android.data.AndroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Source lookup done, found 18 sources and 79 sinks.
+[Service Thread] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Triggering memory warning at 2796 MB (2796 MB in tenured gen)...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 100527
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 4543993
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 7237072 forward and 4393962 backward edges solved, processing 18 results...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 2806 MB
+[Service Thread] WARN soot.jimple.infoflow.memory.FlowDroidMemoryWatcher - Running out of memory, solvers terminated
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 234 MB
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 18 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17..
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18..
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 290 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r3, $r0, null) in method <com.stericson.RootShell.RootShell: void log(java.lang.String,java.lang.String,com.stericson.RootShell.RootShell$LogLevel,java.lang.Exception)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.fa.c.Utilities: java.lang.String GetPhoneNumber(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r6.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2) in method <com.carlospinan.utils.UtilActivity: void onNewIntent(android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r1 := @parameter0: android.content.Intent in method <org.cocos2dx.cpp.AppActivity: void onNewIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("TRACKING", $r5) in method <com.carlospinan.utils.UtilActivity: void onNewIntent(android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r1 := @parameter0: android.content.Intent in method <org.cocos2dx.cpp.AppActivity: void onNewIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r1) in method <com.chartboost.sdk.impl.bt: void a(java.io.File,byte[],boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r7.<java.util.Locale: java.lang.String getCountry()>() in method <com.chartboost.sdk.impl.ay$e: void <init>(com.chartboost.sdk.impl.ay)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1) in method <com.chartboost.sdk.Libraries.CBLogging: void d(java.lang.Object,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r7.<java.util.Locale: java.lang.String getCountry()>() in method <com.chartboost.sdk.impl.ay$e: void <init>(com.chartboost.sdk.impl.ay)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r3, $r1) in method <com.chartboost.sdk.Libraries.CBLogging: void b(java.lang.Object,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r7.<java.util.Locale: java.lang.String getCountry()>() in method <com.chartboost.sdk.impl.ay$e: void <init>(com.chartboost.sdk.impl.ay)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r3, $r0) in method <com.stericson.RootShell.RootShell: void log(java.lang.String,java.lang.String,com.stericson.RootShell.RootShell$LogLevel,java.lang.Exception)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.fa.c.Utilities: java.lang.String GetPhoneNumber(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r0) in method <com.chartboost.sdk.impl.t: void c(java.lang.String,java.lang.Object[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r7 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>() in method <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r0) in method <com.stericson.RootShell.RootShell: void log(java.lang.String,java.lang.String,com.stericson.RootShell.RootShell$LogLevel,java.lang.Exception)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.fa.c.Utilities: java.lang.String GetPhoneNumber(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r0) in method <com.stericson.RootShell.RootShell: void log(java.lang.String,java.lang.String,com.stericson.RootShell.RootShell$LogLevel,java.lang.Exception)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.fa.c.Utilities: java.lang.String GetPhoneNumber(android.content.Context)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink specialinvoke $r0.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>($r1, 0, $i1) in method <com.chartboost.sdk.impl.ab: void write(byte[],int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r13 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r13 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r1) in method <com.chartboost.sdk.Libraries.CBLogging: void a(java.lang.Object,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r7.<java.util.Locale: java.lang.String getCountry()>() in method <com.chartboost.sdk.impl.ay$e: void <init>(com.chartboost.sdk.impl.ay)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r4, $r1, $r2) in method <com.chartboost.sdk.Libraries.CBLogging: void b(java.lang.Object,java.lang.String,java.lang.Throwable)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r7.<java.util.Locale: java.lang.String getCountry()>() in method <com.chartboost.sdk.impl.ay$e: void <init>(com.chartboost.sdk.impl.ay)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r0) in method <com.chartboost.sdk.impl.t: void b(java.lang.String,java.lang.Object[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r7 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>() in method <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r13 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r13 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r3, $r0, null), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.fa.c.Utilities: java.lang.String GetPhoneNumber(android.content.Context)>)
+Found a flow to sink virtualinvoke $r6.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Intent (in <org.cocos2dx.cpp.AppActivity: void onNewIntent(android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("TRACKING", $r5), from the following sources:
+	- $r1 := @parameter0: android.content.Intent (in <org.cocos2dx.cpp.AppActivity: void onNewIntent(android.content.Intent)>)
+Found a flow to sink virtualinvoke $r3.<java.io.OutputStream: void write(byte[])>($r1), from the following sources:
+	- $r4 = virtualinvoke $r7.<java.util.Locale: java.lang.String getCountry()>() (in <com.chartboost.sdk.impl.ay$e: void <init>(com.chartboost.sdk.impl.ay)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r1), from the following sources:
+	- $r4 = virtualinvoke $r7.<java.util.Locale: java.lang.String getCountry()>() (in <com.chartboost.sdk.impl.ay$e: void <init>(com.chartboost.sdk.impl.ay)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r3, $r1), from the following sources:
+	- $r4 = virtualinvoke $r7.<java.util.Locale: java.lang.String getCountry()>() (in <com.chartboost.sdk.impl.ay$e: void <init>(com.chartboost.sdk.impl.ay)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r3, $r0), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.fa.c.Utilities: java.lang.String GetPhoneNumber(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r0), from the following sources:
+	- $r7 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>() (in <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r3, $r0), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.fa.c.Utilities: java.lang.String GetPhoneNumber(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r0), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.fa.c.Utilities: java.lang.String GetPhoneNumber(android.content.Context)>)
+Found a flow to sink specialinvoke $r0.<java.io.ByteArrayOutputStream: void write(byte[],int,int)>($r1, 0, $i1), from the following sources:
+	- $r13 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>)
+	- $r13 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r1), from the following sources:
+	- $r4 = virtualinvoke $r7.<java.util.Locale: java.lang.String getCountry()>() (in <com.chartboost.sdk.impl.ay$e: void <init>(com.chartboost.sdk.impl.ay)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>($r4, $r1, $r2), from the following sources:
+	- $r4 = virtualinvoke $r7.<java.util.Locale: java.lang.String getCountry()>() (in <com.chartboost.sdk.impl.ay$e: void <init>(com.chartboost.sdk.impl.ay)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r0), from the following sources:
+	- $r7 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.StatusLine getStatusLine()>() (in <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>)
+	- $r13 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>)
+	- $r13 = interfaceinvoke $r2.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.chartboost.sdk.impl.u: com.chartboost.sdk.impl.i a(com.chartboost.sdk.impl.l)>)
+Maximum memory consumption: 2806.672504 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 17 leaks
+Analysis has run for 246.650629021 seconds

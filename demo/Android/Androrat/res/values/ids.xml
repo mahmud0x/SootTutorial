@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="ipfield" />
+    <item type="id" name="portfield" />
+    <item type="id" name="buttonstart" />
+    <item type="id" name="buttonstop" />
+</resources>
